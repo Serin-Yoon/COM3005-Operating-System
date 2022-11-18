@@ -48,7 +48,6 @@ int main() {
         pid = fork();
         child_process[i].pid = pid;
         child_process[i].CPU_burst = 60 + rand() % 30; // random CPU burst time (1min ~ 1.5min)
-        //child_process[i].CPU_burst = rand() % 10 + 5; // 나중에 위에 걸로 다시 바꿀 것
         child_process[i].IO_burst = 20 + rand() % 10; // random IO burst time (20sec ~ 30sec)
 
 
